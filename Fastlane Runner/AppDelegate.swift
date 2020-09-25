@@ -11,14 +11,17 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    var statusBarItem : NSStatusItem?
+    var window: NSWindow?
+    let interactor: Interactor = Interactor()
+    var lanes: [Lane] = []
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        configureStatusBarItem()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+
     }
 
     // MARK: - Core Data stack
@@ -117,6 +120,60 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .terminateNow
     }
-
 }
 
+private extension AppDelegate {
+
+    func configureStatusBarItem() {
+        statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.squareLength))
+        statusBarItem?.button?.title = "FR"
+        statusBarItem?.button?.target = self
+        let menu = NSMenu()
+        menu.delegate = self
+        statusBarItem!.menu = menu
+        reloadStatusBarMenuItems()
+    }
+
+    @objc func reloadStatusBarMenuItems() {
+        guard let menu = statusBarItem?.menu else { return }
+        menu.removeAllItems()
+        var lanes = [Lane]()
+        let files = interactor.getFastfiles()
+        for file in files where !file.lanes.isEmpty {
+            for lane in file.lanes where lane.isFavorite {
+                menu.addItem(NSMenuItem(title: "\(file.name): \(lane.name)", action: #selector(didSelectLane(_:)), keyEquivalent: ""))
+                lanes.append(lane)
+            }
+        }
+        menu.addItem(NSMenuItem.separator())
+        menu.addItem(NSMenuItem(title: "Open app", action: #selector(openApp(_:)), keyEquivalent: ""))
+        self.lanes = lanes
+    }
+
+    @objc func didSelectLane(_ sender: NSMenuItem) {
+        if let element = statusBarItem?.menu?.items.enumerated().first(where: { $0.element == sender }),
+            lanes.count > element.offset {
+            let lane = lanes[element.offset]
+            interactor.runLane(lane.name, projectDirectory: lane.execPath)
+        }
+    }
+
+    @objc func openApp(_ sender: NSMenuItem) {
+        let window: NSWindow?
+        if NSApplication.shared.windows.isEmpty {
+            let storyboard = NSStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateInitialController() as? NSWindowController
+            window = controller?.window
+        } else {
+            window = NSApplication.shared.windows.first
+        }
+        window?.makeKeyAndOrderFront(self)
+    }
+}
+
+extension AppDelegate: NSMenuDelegate {
+
+    func menuWillOpen(_ menu: NSMenu) {
+        reloadStatusBarMenuItems()
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "images" : [
+    {
+      "filename" : "Status bar icon (1) 2 5.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 2-1.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "16x16"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 4.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "18x18"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 3 2.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "18x18"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 3 2 2.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "24x24"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 3.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "24x24"
+    },
+    {
+      "filename" : "Status bar icon (1) 2 2.png",
+      "idiom" : "universal",
+      "scale" : "1x",
+      "size" : "32x32"
+    },
+    {
+      "filename" : "Status bar icon (1) 2.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "32x32"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

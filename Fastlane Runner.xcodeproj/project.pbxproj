@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5510092A24EC2CDD00BC054E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510092924EC2CDD00BC054E /* Presenter.swift */; };
+		5510092C24EC2D4300BC054E /* Lane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510092B24EC2D4300BC054E /* Lane.swift */; };
+		5510092E24EC2D4F00BC054E /* FastfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510092D24EC2D4F00BC054E /* FastfileModel.swift */; };
+		5510093524EC354B00BC054E /* TextCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510093424EC354B00BC054E /* TextCellView.swift */; };
+		5510093824ED78FD00BC054E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510093724ED78FD00BC054E /* MainWindowController.swift */; };
+		5510094224ED941000BC054E /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510094124ED941000BC054E /* Database.swift */; };
 		55574E5B24DC18D30058C60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5A24DC18D30058C60B /* AppDelegate.swift */; };
 		55574E5D24DC18D30058C60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5C24DC18D30058C60B /* ViewController.swift */; };
 		55574E6024DC18D30058C60B /* Fastlane_Runner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5E24DC18D30058C60B /* Fastlane_Runner.xcdatamodeld */; };
 		55574E6224DC18D60058C60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55574E6124DC18D60058C60B /* Assets.xcassets */; };
 		55574E6524DC18D60058C60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55574E6324DC18D60058C60B /* Main.storyboard */; };
+		5591B94524EF8E3300A7B559 /* OutlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591B94424EF8E3300A7B559 /* OutlineView.swift */; };
+		5591B94824EFD02A00A7B559 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5591B94724EFD02A00A7B559 /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5510092924EC2CDD00BC054E /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		5510092B24EC2D4300BC054E /* Lane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lane.swift; sourceTree = "<group>"; };
+		5510092D24EC2D4F00BC054E /* FastfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastfileModel.swift; sourceTree = "<group>"; };
+		5510093424EC354B00BC054E /* TextCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellView.swift; sourceTree = "<group>"; };
+		5510093724ED78FD00BC054E /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		5510094124ED941000BC054E /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		55574E5724DC18D30058C60B /* Fastlane Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fastlane Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55574E5A24DC18D30058C60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55574E5C24DC18D30058C60B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +37,8 @@
 		55574E6424DC18D60058C60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55574E6624DC18D60058C60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55574E6724DC18D60058C60B /* Fastlane_Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fastlane_Runner.entitlements; sourceTree = "<group>"; };
+		5591B94424EF8E3300A7B559 /* OutlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineView.swift; sourceTree = "<group>"; };
+		5591B94724EFD02A00A7B559 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5510092F24EC2D6800BC054E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5510092B24EC2D4300BC054E /* Lane.swift */,
+				5510092D24EC2D4F00BC054E /* FastfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5510093024EC2D6F00BC054E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55574E6124DC18D60058C60B /* Assets.xcassets */,
+				55574E6324DC18D60058C60B /* Main.storyboard */,
+				55574E6624DC18D60058C60B /* Info.plist */,
+				55574E6724DC18D60058C60B /* Fastlane_Runner.entitlements */,
+				55574E5E24DC18D30058C60B /* Fastlane_Runner.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5510093124EC325000BC054E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55574E5C24DC18D30058C60B /* ViewController.swift */,
+				5510093424EC354B00BC054E /* TextCellView.swift */,
+				5591B94424EF8E3300A7B559 /* OutlineView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5510093624ED78DE00BC054E /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				5510093724ED78FD00BC054E /* MainWindowController.swift */,
+			);
+			name = MainWindow;
+			sourceTree = "<group>";
+		};
+		5510093F24ED93FB00BC054E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5510092924EC2CDD00BC054E /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5510094024ED940500BC054E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5510094124ED941000BC054E /* Database.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		55574E4E24DC18D30058C60B = {
 			isa = PBXGroup;
 			children = (
@@ -56,14 +127,23 @@
 			isa = PBXGroup;
 			children = (
 				55574E5A24DC18D30058C60B /* AppDelegate.swift */,
-				55574E5C24DC18D30058C60B /* ViewController.swift */,
-				55574E6124DC18D60058C60B /* Assets.xcassets */,
-				55574E6324DC18D60058C60B /* Main.storyboard */,
-				55574E6624DC18D60058C60B /* Info.plist */,
-				55574E6724DC18D60058C60B /* Fastlane_Runner.entitlements */,
-				55574E5E24DC18D30058C60B /* Fastlane_Runner.xcdatamodeld */,
+				5510093624ED78DE00BC054E /* MainWindow */,
+				5510093124EC325000BC054E /* View */,
+				5510093F24ED93FB00BC054E /* Presenter */,
+				5591B94624EFD01A00A7B559 /* Interactor */,
+				5510092F24EC2D6800BC054E /* Models */,
+				5510094024ED940500BC054E /* Services */,
+				5510093024EC2D6F00BC054E /* Supporting Files */,
 			);
 			path = "Fastlane Runner";
+			sourceTree = "<group>";
+		};
+		5591B94624EFD01A00A7B559 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5591B94724EFD02A00A7B559 /* Interactor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5510092C24EC2D4300BC054E /* Lane.swift in Sources */,
 				55574E5D24DC18D30058C60B /* ViewController.swift in Sources */,
+				5591B94824EFD02A00A7B559 /* Interactor.swift in Sources */,
 				55574E6024DC18D30058C60B /* Fastlane_Runner.xcdatamodeld in Sources */,
+				5591B94524EF8E3300A7B559 /* OutlineView.swift in Sources */,
+				5510092E24EC2D4F00BC054E /* FastfileModel.swift in Sources */,
+				5510093524EC354B00BC054E /* TextCellView.swift in Sources */,
+				5510092A24EC2CDD00BC054E /* Presenter.swift in Sources */,
+				5510094224ED941000BC054E /* Database.swift in Sources */,
+				5510093824ED78FD00BC054E /* MainWindowController.swift in Sources */,
 				55574E5B24DC18D30058C60B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,12 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Fastlane_Runner.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Fastlane Runner/Info.plist";
+				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -293,12 +382,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Fastlane_Runner.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Fastlane Runner/Info.plist";
+				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
