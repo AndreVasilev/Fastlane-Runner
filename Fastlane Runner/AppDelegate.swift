@@ -126,7 +126,11 @@ private extension AppDelegate {
 
     func configureStatusBarItem() {
         statusBarItem = NSStatusBar.system.statusItem(withLength: CGFloat(NSStatusItem.squareLength))
+        #if DEBUG
+        statusBarItem?.button?.title = "[FR]"
+        #else
         statusBarItem?.button?.title = "FR"
+        #endif
         statusBarItem?.button?.target = self
         let menu = NSMenu()
         menu.delegate = self
@@ -147,6 +151,7 @@ private extension AppDelegate {
         }
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Open app", action: #selector(openApp(_:)), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(quitApp(_:)), keyEquivalent: ""))
         self.lanes = lanes
     }
 
@@ -168,6 +173,11 @@ private extension AppDelegate {
             window = NSApplication.shared.windows.first
         }
         window?.makeKeyAndOrderFront(self)
+        NSRunningApplication.current.activate(options: [.activateAllWindows, .activateIgnoringOtherApps])
+    }
+
+    @objc func quitApp(_ sender: NSMenuItem) {
+        NSApp.terminate(self)
     }
 }
 

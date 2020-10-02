@@ -364,7 +364,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";
@@ -385,7 +385,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";

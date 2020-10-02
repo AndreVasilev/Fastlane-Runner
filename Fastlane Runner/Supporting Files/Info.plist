@@ -28,8 +28,6 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
-	<key>NSAppleEventsUsageDescription</key>
-	<string>Needs permissions to access Terminal</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Vasilev. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
