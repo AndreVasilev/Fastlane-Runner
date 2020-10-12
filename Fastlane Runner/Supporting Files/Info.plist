@@ -29,7 +29,7 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSAppleEventsUsageDescription</key>
-	<string>Grant access to enable Fastlane Runner open other apps for editing Fastfiles</string>
+	<string>Grant access to enable Fastlane Runner exec lanes in Terminal</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Andrey Vasilev. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
