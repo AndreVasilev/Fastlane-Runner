@@ -13,6 +13,7 @@
 		5510093524EC354B00BC054E /* TextCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510093424EC354B00BC054E /* TextCellView.swift */; };
 		5510093824ED78FD00BC054E /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510093724ED78FD00BC054E /* MainWindowController.swift */; };
 		5510094224ED941000BC054E /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5510094124ED941000BC054E /* Database.swift */; };
+		555198F12530D114008CEF60 /* ExternalApplications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555198F02530D114008CEF60 /* ExternalApplications.swift */; };
 		55574E5B24DC18D30058C60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5A24DC18D30058C60B /* AppDelegate.swift */; };
 		55574E5D24DC18D30058C60B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5C24DC18D30058C60B /* ViewController.swift */; };
 		55574E6024DC18D30058C60B /* Fastlane_Runner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55574E5E24DC18D30058C60B /* Fastlane_Runner.xcdatamodeld */; };
@@ -29,6 +30,7 @@
 		5510093424EC354B00BC054E /* TextCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCellView.swift; sourceTree = "<group>"; };
 		5510093724ED78FD00BC054E /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		5510094124ED941000BC054E /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		555198F02530D114008CEF60 /* ExternalApplications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalApplications.swift; sourceTree = "<group>"; };
 		55574E5724DC18D30058C60B /* Fastlane Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fastlane Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55574E5A24DC18D30058C60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55574E5C24DC18D30058C60B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5591B94724EFD02A00A7B559 /* Interactor.swift */,
+				555198F02530D114008CEF60 /* ExternalApplications.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				5510092C24EC2D4300BC054E /* Lane.swift in Sources */,
 				55574E5D24DC18D30058C60B /* ViewController.swift in Sources */,
 				5591B94824EFD02A00A7B559 /* Interactor.swift in Sources */,
+				555198F12530D114008CEF60 /* ExternalApplications.swift in Sources */,
 				55574E6024DC18D30058C60B /* Fastlane_Runner.xcdatamodeld in Sources */,
 				5591B94524EF8E3300A7B559 /* OutlineView.swift in Sources */,
 				5510092E24EC2D4F00BC054E /* FastfileModel.swift in Sources */,
@@ -364,9 +368,9 @@
 				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,9 +389,9 @@
 				CODE_SIGN_ENTITLEMENTS = "Fastlane Runner/Supporting Files/Fastlane_Runner.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 5PD3WD5BAH;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Fastlane Runner/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

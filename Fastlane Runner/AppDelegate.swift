@@ -159,7 +159,7 @@ private extension AppDelegate {
         if let element = statusBarItem?.menu?.items.enumerated().first(where: { $0.element == sender }),
             lanes.count > element.offset {
             let lane = lanes[element.offset]
-            interactor.runLane(lane.name, projectDirectory: lane.execPath)
+            interactor.runLane(lane.name, projectDirectory: lane.execPath, foreground: false)
         }
     }
 

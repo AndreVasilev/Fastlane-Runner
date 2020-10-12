@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -147,13 +148,13 @@
                                 </customSpacing>
                             </stackView>
                             <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAR-Vb-WCX">
-                                <rect key="frame" x="0.0" y="0.0" width="540" height="81"/>
+                                <rect key="frame" x="0.0" y="0.0" width="555" height="81"/>
                                 <clipView key="contentView" id="5ja-Dt-yZC">
-                                    <rect key="frame" x="0.0" y="0.0" width="540" height="81"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="555" height="81"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Owh-qO-aJG" viewBased="YES" indentationPerLevel="16" outlineTableColumn="i3S-yJ-CaE" id="pQx-2l-EZ9" customClass="OutlineView" customModule="Fastlane_Runner" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="540" height="56"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="555" height="56"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -195,7 +196,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn width="418" minWidth="40" maxWidth="1000" id="fle-y7-LNa">
+                                                <tableColumn width="433" minWidth="40" maxWidth="1000" id="fle-y7-LNa">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Path">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -208,11 +209,11 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="wzS-pb-TOU">
-                                                            <rect key="frame" x="120" y="1" width="418" height="17"/>
+                                                            <rect key="frame" x="120" y="1" width="433" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="LQs-oF-m8m">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="418" height="17"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="433" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="87N-gd-UIe"/>
                                                                     </constraints>
@@ -253,7 +254,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="Owh-qO-aJG">
-                                    <rect key="frame" x="0.0" y="0.0" width="540" height="25"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="555" height="25"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>

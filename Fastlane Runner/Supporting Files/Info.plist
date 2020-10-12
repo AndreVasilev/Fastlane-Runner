@@ -28,8 +28,10 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Grant access to enable Fastlane Runner open other apps for editing Fastfiles</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 Vasilev. All rights reserved.</string>
+	<string>Copyright © 2020 Andrey Vasilev. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>

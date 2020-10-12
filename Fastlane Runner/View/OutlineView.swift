@@ -28,8 +28,12 @@ class OutlineView: NSOutlineView {
         let item = self.item(atRow: clickedRow)
         if item is Fastfile {
             menu?.addItem(NSMenuItem(title: "Open in Finder", action: #selector(openInFinder(_:)), keyEquivalent: ""))
-            menu?.addItem(NSMenuItem(title: "Open in Sublime", action: #selector(openInSublime(_:)), keyEquivalent: ""))
-            menu?.addItem(NSMenuItem(title: "Open in TextEdit", action: #selector(openInTextEdit(_:)), keyEquivalent: ""))
+            if ExteranlApplications.sublime != nil {
+                menu?.addItem(NSMenuItem(title: "Open in Sublime", action: #selector(openInSublime(_:)), keyEquivalent: ""))
+            }
+            if ExteranlApplications.textEdit != nil {
+                menu?.addItem(NSMenuItem(title: "Open in TextEdit", action: #selector(openInTextEdit(_:)), keyEquivalent: ""))
+            }
             menu?.addItem(NSMenuItem(title: "Remove", action: #selector(remove(_:)), keyEquivalent: ""))
         } else if let lane = item as? Lane {
             menu?.addItem(NSMenuItem(title: "Run", action: #selector(run(_:)), keyEquivalent: ""))

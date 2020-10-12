@@ -57,19 +57,19 @@ class Presenter {
     }
 
     func runLane(_ lane: Lane) {
-        interactor.runLane(lane.name, projectDirectory: lane.execPath)
+        interactor.runLane(lane.name, projectDirectory: lane.execPath, foreground: true)
     }
 
     func openInFinder(fastfile: Fastfile) {
-        interactor.openInFinder(fileAt: fastfile.url.path)
+        interactor.openInFinder(fileAt: fastfile.url)
     }
 
     func openInSublime(fastfile: Fastfile) {
-        interactor.openInSublime(fileAt: fastfile.url.path)
+        interactor.openInSublime(fileAt: fastfile.url)
     }
 
     func openInTextEdit(fastfile: Fastfile) {
-        interactor.openInTextEdit(fileAt: fastfile.url.path)
+        interactor.openInTextEdit(fileAt: fastfile.url)
     }
 
     func setFavorite(_ favorite: Bool, lane: Lane) {
