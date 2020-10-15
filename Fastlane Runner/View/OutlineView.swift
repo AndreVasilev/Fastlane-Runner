@@ -27,7 +27,7 @@ class OutlineView: NSOutlineView {
         let clickedRow = row(at: point)
         let item = self.item(atRow: clickedRow)
         if item is Fastfile {
-            menu?.addItem(NSMenuItem(title: "Open in Finder", action: #selector(openInFinder(_:)), keyEquivalent: ""))
+            menu?.addItem(NSMenuItem(title: "Show in Finder", action: #selector(openInFinder(_:)), keyEquivalent: ""))
             if ExteranlApplications.sublime != nil {
                 menu?.addItem(NSMenuItem(title: "Open in Sublime", action: #selector(openInSublime(_:)), keyEquivalent: ""))
             }
@@ -36,7 +36,7 @@ class OutlineView: NSOutlineView {
             }
             menu?.addItem(NSMenuItem(title: "Remove", action: #selector(remove(_:)), keyEquivalent: ""))
         } else if let lane = item as? Lane {
-            menu?.addItem(NSMenuItem(title: "Run", action: #selector(run(_:)), keyEquivalent: ""))
+            menu?.addItem(NSMenuItem(title: "Run 🚀", action: #selector(run(_:)), keyEquivalent: ""))
             if lane.isFavorite {
                 menu?.addItem(NSMenuItem(title: "Remove from Favorite", action: #selector(removeFromFavorite(_:)), keyEquivalent: ""))
             } else {
