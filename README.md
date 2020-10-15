@@ -1,5 +1,7 @@
 # Fastlane Runner
 Fastlane Runner is a helper tool for those who use Fastlane on their personal Mac for easy access to Fastfile lanes
+([download](https://github.com/AndreVasilev/Fastlane-Runner/raw/master/Latest%20release.zip))
+
 
 ## How to use
 
