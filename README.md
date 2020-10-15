@@ -9,4 +9,4 @@ Fastlane Runner is a helper tool for those who use Fastlane on their personal Ma
 * Expand Fastfile to see lanes in it
 * Add lane to Favorites to run them directly from **FR** status bar item by right-click on a lane row
 
-![Screenshot](Media/Tutorial.gif)
+![Screenshot](Tutorial.gif)
