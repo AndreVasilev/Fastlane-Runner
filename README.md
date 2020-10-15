@@ -1,5 +1,5 @@
 # Fastlane Runner
-Fastlane Runner - developer utility for easy access to Fastfile lanes
+Fastlane Runner is a helper tool for those who use Fastlane on their personal Mac for easy access to Fastfile lanes
 
 ## How to use
 
@@ -8,3 +8,5 @@ Fastlane Runner - developer utility for easy access to Fastfile lanes
 * Manage added Fastfiles by right-click on a row
 * Expand Fastfile to see lanes in it
 * Add lane to Favorites to run them directly from **FR** status bar item by right-click on a lane row
+
+![Screenshot](Media/Tutorial.gif)
